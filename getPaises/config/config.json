@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "get-paises-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/getPaises/GetPaisesWebPart.js",
+          "manifest": "./src/webparts/getPaises/GetPaisesWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "GetPaisesWebPartStrings": "lib/webparts/getPaises/loc/{locale}.js"
+  }
+}
