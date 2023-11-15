@@ -22,6 +22,12 @@ export interface IGetPaisesWebPartProps {
 
 export default class GetPaisesWebPart extends BaseClientSideWebPart<IGetPaisesWebPartProps> {
 
+  protected get disableReactivePropertyChanges(): boolean {
+    return true;
+  }
+
+
+
   private _isDarkTheme: boolean = false;
   private _environmentMessage: string = '';
 

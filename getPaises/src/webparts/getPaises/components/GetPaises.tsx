@@ -41,7 +41,7 @@ export default class GetPaises extends React.Component<IGetPaisesProps, { data: 
         <div className={styles.welcome}>
           <h1>Lista de Paises</h1>
           <h3>Capital seleccionada: {this.props.capital.charAt(0).toUpperCase() + this.props.capital.slice(1)}</h3>
-          // Pone en mayusculas la primera letra
+          {/* // Pone en mayusculas la primera letra */}
           <DefaultButton text="Consultar API" onClick={handleClick} />
           <DefaultButton text="Borrar resultado" onClick={handleClearClick} />
         </div>
